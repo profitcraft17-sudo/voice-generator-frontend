@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Generator</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+<body>
 
+    <div class="container">
+        <header>
+            <h1>AI Custom Voice Generator</h1>
+            <p>Convert your text into sweet, natural custom audio instantly.</p>
+        </header>
+
+        <main class="main-content">
+            <div class="input-section">
+                <label for="text-input">Enter your script/text below:</label>
+                <textarea id="text-input" placeholder="Type or paste your text here..." rows="6" maxlength="5000"></textarea>
+                <div class="char-counter"><span id="word-count">0</span> / 5000 characters</div>
+            </div>
+
+            <div class="options-section">
+                <label for="voice-select">Choose Voice Model:</label>
+                <select id="voice-select">
+                    <option value="cute_boy">Cute Boy Voice (RVC Optimized)</option>
+                </select>
+            </div>
+
+            <div class="action-section">
+                <button id="generate-btn" class="btn primary-btn">Generate Voice</button>
+            </div>
+
+            <div id="status-message" class="status-msg hidden"></div>
+            <div id="loading-spinner" class="spinner hidden">
+                <div class="loader"></div>
+                <p id="loading-text">Processing text chunks...</p>
+            </div>
+
+            <div id="audio-result-section" class="audio-section hidden">
+                <h3>Generated Audio Output</h3>
+                <audio id="audio-player" controls></audio>
+                <br>
+                <a id="download-btn" class="btn secondary-btn" download="ai-voice-output.mp3">Download Audio</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="public/assets/js/app.js"></script>
+</body>
+                                            </html>
