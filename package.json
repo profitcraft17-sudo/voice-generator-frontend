@@ -1,1 +1,12 @@
-
+{
+  "name": "voice-generator-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for AI Custom Voice Generator hosted on Vercel",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Run index.html directly in browser or use a local static server'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
